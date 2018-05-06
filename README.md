@@ -8,16 +8,20 @@ March
      https://arxiv.org/pdf/1803.08085.pdf
 
        Videos express highly structured spatio-temporal patterns of visual data. 
+			 
        two factors: 
            (i) temporally invariant (e.g., person identity), or slowly varying (e.g., activity), attribute- induced 
            appearance, encoding the persistent content of each frame, and 
            (ii) an interframe motion or scene dynamics (e.g., encoding evolution of the person ex- ecuting the action). 
+					 
        VideoVAE
           - video generation + future prediction. 
+					
           - generates a video (short clip) by:
               decoding samples sequentially drawn from a latent space distribution into full video frames.
               - VAE: encoding/decoding frames into/from the latent space 
               - RNN: model the dynamics in the latent space.     
+							
           - improve the video generation consistency through temporally-conditional sampling and quality
               structuring the latent space with attribute controls
               ensuring that attributes can be both inferred and conditioned on during learning/generation
@@ -40,10 +44,12 @@ Year 2017
      https://arxiv.org/pdf/1712.03534.pdf
 
          - spatial constructs <---- target image; dynamics <------source video sequence
+				 
          - To preserve the spatial construct of the target image:
               - the appearance of the source video sequence is suppressed 
               - only the dynamics are obtained before being imposed onto the target image. 
                      (using the proposed appearance suppressed dynamics feature.)
+										 
          - the spatial and temporal consistencies are verified via two discriminator networks.  
                - discriminator A validates the fidelity of the generated frames appearance, 
                -  B validates the dynamic consistency of the generated video sequence. 
