@@ -5,11 +5,15 @@ Year 2018
 
 March
 1. Probabilistic Video Generation using Holistic Attribute Control https://arxiv.org/pdf/1803.08085.pdf
+
 -Videos express highly structured spatio-temporal patterns of visual data. 
 -two factors: 
   -(i) temporally invariant (e.g., person identity), or slowly varying (e.g., activity), attribute- induced 
            appearance, encoding the persistent content of each frame, and 
   - (ii) an interframe motion or scene dynamics (e.g., encoding evolution of the person ex- ecuting the action). 
+  
+  
+  
 					 
 -VideoVAE
   - video generation + future prediction. 
@@ -20,6 +24,10 @@ March
   - improve the video generation consistency through temporally-conditional sampling and quality
               structuring the latent space with attribute controls
               ensuring that attributes can be both inferred and conditioned on during learning/generation
+	      
+	      
+	      
+	      
 
 2.Learning to Generate Time-Lapse Videos Using Multi-Stage Dynamic Generative Adversarial Networks
     https://arxiv.org/pdf/1709.07592.pdf
@@ -39,20 +47,17 @@ Year 2017
 
 1. Dynamics Transfer GAN: Generating Video by Transferring Arbitrary Temporal Dynamics from a Source Video to a Single Target Image https://arxiv.org/pdf/1712.03534.pdf
 
-- spatial constructs <---- target image; dynamics <------source video sequence
+-spatial constructs <---- target image; dynamics <------source video sequence
 				 
-- To preserve the spatial construct of the target image:
-  - the appearance of the source video sequence is suppressed 
-  - only the dynamics are obtained before being imposed onto the target image. 
-                     (using the proposed appearance suppressed dynamics feature.)
-										 
-- the spatial and temporal consistencies are verified via two discriminator networks.  
-   - discriminator A validates the fidelity of the generated frames appearance, 
-   -  B validates the dynamic consistency of the generated video sequence. 
- - Results:
-   - successfully transferred arbitrary dynamics of the source video sequence onto a target image 
-   - maintained the spatial constructs (appearance) of the target image while generating spatially and   
-                  temporally consistent video sequences.
+-To preserve the spatial construct of the target image:
+- the appearance of the source video sequence is suppressed 
+- only the dynamics are obtained before being imposed onto the target image.  (using the proposed appearance suppressed dynamics feature.)					 
+-the spatial and temporal consistencies are verified via two discriminator networks.  
+- discriminator A validates the fidelity of the generated frames appearance, 
+-  B validates the dynamic consistency of the generated video sequence. 
+- Results:
+- successfully transferred arbitrary dynamics of the source video sequence onto a target image 
+- maintained the spatial constructs (appearance) of the target image while generating spatially and temporally consistent video sequences.
          [图片]
          
 
@@ -73,12 +78,19 @@ Note: It is ### everything (Literature Review in its intro) because it is quite 
    
 4. Learning to Generate Time-Lapse Videos Using Multi-Stage Dynamic Generative Adversarial Networks
    https://arxiv.org/pdf/1709.07592.pdf
+   
+   
+   
    
 5. MoCoGAN: Decomposing Motion and Content for Video Generation
     https://arxiv.org/pdf/1707.04993.pdf
+    
+    
+    
    
 6. To Create What You Tell: Generating Videos from Captions
      https://www.microsoft.com/en-us/research/wp-content/uploads/2017/11/BNI02-panA.pdf
+     
 
 -Temporal GANs conditioning on Captions, namely TGANs-C
          
