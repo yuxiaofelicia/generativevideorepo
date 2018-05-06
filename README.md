@@ -8,44 +8,41 @@ March
 
 -Videos express highly structured spatio-temporal patterns of visual data. 
 -two factors: 
-  -(i) temporally invariant (e.g., person identity), or slowly varying (e.g., activity), attribute- induced 
-           appearance, encoding the persistent content of each frame, and 
-  - (ii) an interframe motion or scene dynamics (e.g., encoding evolution of the person ex- ecuting the action). 
+-(i) temporally invariant (e.g., person identity), or slowly varying (e.g., activity), attribute- induced appearance, encoding the persistent content of each frame
+- (ii) an interframe motion or scene dynamics (e.g., encoding evolution of the person ex- ecuting the action). 
   
   
   
 					 
--VideoVAE
-  - video generation + future prediction. 
-  - generates a video (short clip) by:
-     -decoding samples sequentially drawn from a latent space distribution into full video frames.
-     - VAE: encoding/decoding frames into/from the latent space 
-     - RNN: model the dynamics in the latent space.     
-  - improve the video generation consistency through temporally-conditional sampling and quality
-              structuring the latent space with attribute controls
-              ensuring that attributes can be both inferred and conditioned on during learning/generation
+VideoVAE
+-video generation + future prediction. 
+-generates a video (short clip) by:
+-decoding samples sequentially drawn from a latent space distribution into full video frames.
+-VAE: encoding/decoding frames into/from the latent space 
+-RNN: model the dynamics in the latent space.     
+-improve the video generation consistency through temporally-conditional sampling and quality 
+-structuring the latent space with attribute controls
+-ensuring that attributes can be both inferred and conditioned on during learning/generation
 	      
 	      
 	      
 	      
 
-2.Learning to Generate Time-Lapse Videos Using Multi-Stage Dynamic Generative Adversarial Networks
-    https://arxiv.org/pdf/1709.07592.pdf
+2.Learning to Generate Time-Lapse Videos Using Multi-Stage Dynamic Generative Adversarial Networks https://arxiv.org/pdf/1709.07592.pdf
  
  
  
-3. Every Smile is Unique: Landmark-Guided Diverse Smile Generation
-      https://arxiv.org/pdf/1802.01873.pdf
+3.Every Smile is Unique: Landmark-Guided Diverse Smile Generation https://arxiv.org/pdf/1802.01873.pdf
 
 
 Year 2017
 
 
--By the Way I like this stanford homework paper
-    http://cs231n.stanford.edu/reports/2017/pdfs/323.pdf
+-By the Way I like this stanford homework paper http://cs231n.stanford.edu/reports/2017/pdfs/323.pdf
  
 
 1. Dynamics Transfer GAN: Generating Video by Transferring Arbitrary Temporal Dynamics from a Source Video to a Single Target Image https://arxiv.org/pdf/1712.03534.pdf
+
 
 -spatial constructs <---- target image; dynamics <------source video sequence
 				 
@@ -66,14 +63,21 @@ Note: It is ### everything (Literature Review in its intro) because it is quite 
    
     
 2. Deep Video Generation, Prediction and Completion of Human Action Sequences https://arxiv.org/pdf/1711.08682.pdf
+
+
+
          
 3. Video Generation from Text https://arxiv.org/pdf/1710.00421.pdf
+
 -Hybrid VAE plus GAN
--Two parts: Static( Using gist to sketch text-conditioned background color and object layout (LSTM, RNN structure)Dynamic ( A text2Filter. )
-               [图片]
-               
+-Two parts: 
+-Static( Using gist to sketch text-conditioned background color and object layout (LSTM, RNN structure)
+-Dynamic ( A text2Filter. )
 -3.3 Text2Filter
 -Note: Quite compact. Need time to digestilter
+
+
+
 
    
 4. Learning to Generate Time-Lapse Videos Using Multi-Stage Dynamic Generative Adversarial Networks
